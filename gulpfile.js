@@ -4,7 +4,8 @@ var sass = require('gulp-sass');
 //task para o sass
 gulp.task('sass', function () {
   gulp.src('sass/**/*.sass')
-  .pipe(sass({outputStyle: 'compressed'}).on('error',sass.logError)) //descomentar essa linha apenas quando for a produção final p comprimir todo o css
+.pipe(sass({outputStyle: 'expanded'}).on('error',sass.logError)) //descomentar essa linha apenas quando for a produção final p comprimir todo o css
+  //.pipe(sass({outputStyle: 'compressed'}).on('error',sass.logError)) //descomentar essa linha apenas quando for a produção final p comprimir todo o css
   .pipe(gulp.dest('css'));
 });
 
@@ -18,6 +19,5 @@ gulp.task('upCss', ['sass', 'sass:watch']);
 
 //task padrão
 gulp.task('default', function() {
- 
-});
 
+});
