@@ -3,6 +3,20 @@
 /* ======== Outros */
 /* ======== Background Color Opacity */
 /* ======== Columns */
-.slide {
-  width: 100%;
+section.introduction, section.buttons-shortcut {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  align-items: center;
+  -ms-flex-pack: distribute;
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  justify-content: space-around;
+  border: 1px solid silver;
 }

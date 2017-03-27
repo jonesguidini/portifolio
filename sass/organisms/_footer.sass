@@ -1,11 +1,42 @@
 footer
+  +gradient(180deg, #a2d9de, #fff)
+
+  &:before
+    content: ""
+    display: block
+    width: 100%
+    height: 8px
+    +gradient(90deg, #dedf36, #d2067a)
+
+  .logo-footer
+    display: table
+    margin: 14px auto
+    img
+      width: 62px
+
+  .address-footer
+    display: table
+    margin: 14px auto
+    text-align: center
+
+  .address-footer
+    address
+      a
+        font-weight: $bold
+        color: #000
+      a:hover
+        color: #0093d7
+
   .social
+    margin: 20px auto 0px auto
+    display: table
     li
       display: inline-block
       .fa
         font-size: 22px
-        border: 2px dotted #334f5b
-        border-radius: 25px
+        border: 2px dotted #77b7bd
+        background: #d0ebed
+        +border-radius(25px)
         padding: 10px
         width: 48px
         text-align: center
@@ -13,4 +44,4 @@ footer
       a
         color: #222222
       a:hover
-        color: #319dbb
+        color: #e53600
