@@ -1,7 +1,26 @@
 section.introduction, section.buttons-shortcut
   +flexbox
   +align-items(center)
-  +justify-content(space-around)
-  border: 1px solid silver
+  +justify-content(space-between)
+  margin: 36px 0px
+
+  +breakpoint($celular)
+    display: block
+
+.mini-info-profile
+    margin-left: 30px
+    text-align: justify
+    +make-sm-column(12)
+
+    +breakpoint($celular)
+      margin-left: 0px
+      text-align: justify
+      text-align-last: center
+
+.mini-photo-profile
+  +breakpoint($celular)
+    text-align: center
 
 section.buttons-shortcut
+  +breakpoint($celular)
+    display: block

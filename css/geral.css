@@ -95,11 +95,17 @@ header:after {
   clear: both;
 }
 
+@media (max-width: 440px) {
+  header {
+    min-height: 300px;
+  }
+}
+
 header:after {
   content: "";
   display: block;
   width: 100%;
-  height: 8px;
+  height: 6px;
   background-color: #dedf36;
   background-image: -webkit-gradient(linear, 90deg, from(#d2067a), to(#dedf36));
   background-image: -webkit-linear-gradient(90deg, #d2067a, #dedf36);
@@ -131,7 +137,12 @@ header .logo {
 
 header .logo img {
   width: 403px;
-  height: 311px;
+}
+
+@media (max-width: 440px) {
+  header .logo img {
+    width: 330px;
+  }
 }
 
 header nav {
@@ -150,16 +161,18 @@ header nav {
 
 @media (max-width: 991px) {
   header nav {
-    width: 700px;
+    width: 600px;
     padding: 16px 0px 0px 0px;
     height: 59px;
-    font-size: 20px;
+    font-size: 28px;
+    font-size: 1.75rem;
   }
 }
 
 @media (max-width: 440px) {
   header nav {
     display: none;
+    width: 500px;
   }
 }
 
@@ -201,7 +214,7 @@ footer:before {
   content: "";
   display: block;
   width: 100%;
-  height: 8px;
+  height: 6px;
   background-color: #d2067a;
   background-image: -webkit-gradient(linear, 90deg, from(#dedf36), to(#d2067a));
   background-image: -webkit-linear-gradient(90deg, #dedf36, #d2067a);

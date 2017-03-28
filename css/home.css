@@ -3,6 +3,108 @@
 /* ======== Outros */
 /* ======== Background Color Opacity */
 /* ======== Columns */
+.linkProfile {
+  font-size: 22px;
+  font-size: 1.375rem;
+  -webkit-border-radius: 10px 0px 10px 0px;
+  -moz-border-radius: 10px 0px 10px 0px;
+  -ms-border-radius: 10px 0px 10px 0px;
+  border-radius: 10px 0px 10px 0px;
+  text-decoration: none;
+  margin-top: 10px;
+  line-height: 3;
+  padding: 8px 16px;
+  background: #748815;
+  color: #fff;
+}
+
+.linkProfile:hover {
+  background: #37668e;
+  color: white;
+}
+
+.bts-large-shortcuts {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 60px;
+  font-size: 3.75rem;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  justify-content: center;
+  background: #e5ebed;
+  border: 10px solid #fff;
+  padding: 24px 14px;
+  text-align: center;
+  color: #648b99;
+  position: relativ;
+  margin-bottom: 16px;
+}
+
+@media (min-width: 768px) {
+  .bts-large-shortcuts {
+    float: left;
+    width: 31.66667%;
+  }
+}
+
+@media (max-width: 991px) {
+  .bts-large-shortcuts {
+    font-size: 40px;
+    font-size: 2.5rem;
+    padding: 20px 14px;
+  }
+}
+
+.bts-large-shortcuts div {
+  display: inline;
+}
+
+.bts-large-shortcuts div .fa {
+  margin-right: 12px;
+  font-size: 90px;
+  font-size: 5.625rem;
+}
+
+@media (max-width: 991px) {
+  .bts-large-shortcuts div .fa {
+    margin-right: 8px;
+    font-size: 65px;
+    font-size: 4.0625rem;
+  }
+}
+
+.bts-large-shortcuts:hover {
+  color: #37668e;
+  background: #abd8e8;
+}
+
+.bts-large-shortcuts:before {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+  content: " ";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  border: 2px dotted #999;
+}
+
 section.introduction, section.buttons-shortcut {
   display: -webkit-box;
   display: -webkit-flex;
@@ -14,9 +116,52 @@ section.introduction, section.buttons-shortcut {
   -webkit-align-items: center;
   -moz-align-items: center;
   align-items: center;
-  -ms-flex-pack: distribute;
-  -webkit-justify-content: space-around;
-  -moz-justify-content: space-around;
-  justify-content: space-around;
-  border: 1px solid silver;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  justify-content: space-between;
+  margin: 36px 0px;
+}
+
+@media (max-width: 440px) {
+  section.introduction, section.buttons-shortcut {
+    display: block;
+  }
+}
+
+.mini-info-profile {
+  margin-left: 30px;
+  text-align: justify;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media (min-width: 768px) {
+  .mini-info-profile {
+    float: left;
+    width: 100%;
+  }
+}
+
+@media (max-width: 440px) {
+  .mini-info-profile {
+    margin-left: 0px;
+    text-align: justify;
+    text-align-last: center;
+  }
+}
+
+@media (max-width: 440px) {
+  .mini-photo-profile {
+    text-align: center;
+  }
+}
+
+@media (max-width: 440px) {
+  section.buttons-shortcut {
+    display: block;
+  }
 }

@@ -1,6 +1,10 @@
 header
   +clearfix
   min-height: 500px
+
+  +breakpoint($celular)
+    min-height: 300px
+
   +GradientWithImage('../img/background-top-home.jpg', 90deg, #4d88b5,#2ca0b3)
   //background-image: url('../img/background-top-home.jpg'), linear-gradient(to bottom,#4d88b5,#2ca0b3)
   background-position: top center
@@ -13,7 +17,7 @@ header
     content: ""
     display: block
     width: 100%
-    height: 8px
+    height: 6px
     +gradient(90deg, #d2067a, #dedf36)
     position: absolute
     bottom: 0
@@ -32,7 +36,9 @@ header
     clear: both
     img
       width: 403px
-      height: 311px
+
+      +breakpoint($celular)
+        width: 330px
 
 
   nav
@@ -46,13 +52,14 @@ header
     margin: auto
     +breakpoint($tablet)
       //display: none
-      width: 700px
+      width: 600px
       padding: 16px 0px 0px 0px
       height: 59px
-      font-size: 20px
+      +font-size(28px)
 
     +breakpoint($celular)
       display: none
+      width: 500px
 
     ul
       list-style: none
