@@ -5,22 +5,22 @@ footer
     content: ""
     display: block
     width: 100%
-    height: 6px
+    height: 4px
     +gradient(90deg, #dedf36, #d2067a)
 
   .logo-footer
     display: table
-    margin: 14px auto
+    margin: 0px auto
     img
       width: 62px
 
   .address-footer
     display: table
-    margin: 14px auto
+    margin: 14px auto 0px auto
     text-align: center
 
-  .address-footer
-    address
+    & address
+      line-height: 1.2
       a
         font-weight: $bold
         color: #000
@@ -28,7 +28,7 @@ footer
         color: #0093d7
 
   .social
-    margin: 20px auto 0px auto
+    margin: 16px auto 0px auto
     display: table
     li
       display: inline-block
@@ -40,7 +40,7 @@ footer
         padding: 10px
         width: 48px
         text-align: center
-        margin-right: 5px
+        margin-right: 0px
       a
         color: #222222
       a:hover

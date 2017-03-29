@@ -1,18 +1,24 @@
-.linkProfile
+//BREAKPOINT GERAL
+.bts-shortcuts
+  +flexbox
+  +align-items(center)
+  +justify-content(space-between)
+  margin-top: 30px
+
+.bt-link-about-me
   +font-size(22px)
   +border-radius(10px 0px 10px 0px)
   text-decoration: none
-  margin-top: 10px
-  line-height: 3
+  line-height: 2
   padding: 8px 16px
   background: #748815
   color: #fff
 
   &:hover
-    background: #37668e
     color: $branco
+    background: #37668e
 
-.bts-large-shortcuts
+.bt-large-shortcut
   +flexbox
   +make-sm-column(3.8)
   +font-size(60px)
@@ -20,38 +26,63 @@
   +justify-content(center)
   background: #e5ebed
   border: 10px solid #fff
-  padding: 24px 14px
+  padding: 14px 14px
   text-align: center
   color: #648b99
   position: relativ
-  margin-bottom: 16px
-
-  +breakpoint($tablet)
-    +font-size(40px)
-    padding: 20px 14px
+  margin-bottom: 25px
 
   & div
     display: inline
 
-
-
     & .fa
-      margin-right: 12px
       +font-size(90px)
-      +breakpoint($tablet)
-        margin-right: 8px
-        +font-size(65px)
+      margin-right: 12px
 
   &:hover
     color: #37668e
     background: #abd8e8
 
-.bts-large-shortcuts:before
-  +border-radius(10px)
-  content: " "
-  position: absolute
-  top: -10px
-  left: -10px
-  right: -10px
-  bottom: -10px
-  border: 2px dotted #999
+  &:before
+    +border-radius(10px)
+    content: " "
+    position: absolute
+    top: -10px
+    left: -10px
+    right: -10px
+    bottom: -10px
+    border: 2px dotted #c2c2c2
+
+//BREAKPOINT CELULAR
++breakpoint($celular)
+  .bts-shortcuts
+    display: block
+
+  .bt-large-shortcut
+    margin-bottom: 15px
+
+//BREAKPOINT TABLET
++breakpoint($tablet)
+  .bt-large-shortcut
+      +font-size(40px)
+      padding: 18px 10px
+      border: 7px solid #fff
+
+      & div .fa
+          margin-right: 8px
+          +font-size(62px)
+
+  &:before
+    top: -7px
+    left: -7px
+    right: -7px
+    bottom: -7px
+
+//BREAKPOIN TABLET VERTICAL
++breakpoint($tablet-vertical)
+    .bts-shortcuts
+      a
+        +font-size(39px)
+
+        & .fa
+          +font-size(40px)

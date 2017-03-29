@@ -70,135 +70,6 @@ table {
   border-spacing: 0;
 }
 
-header {
-  min-height: 500px;
-  background-image: url("../img/background-top-home.jpg");
-  background-image: url("../img/background-top-home.jpg") -webkit-linear-gradient(90deg, #4d88b5, #2ca0b3);
-  background-image: url("../img/background-top-home.jpg") -moz-linear-gradient(90deg, #4d88b5, #2ca0b3);
-  background-image: url("../img/background-top-home.jpg") -ms-linear-gradient(90deg, #4d88b5, #2ca0b3);
-  background-image: url("../img/background-top-home.jpg") -o-linear-gradient(90deg, #4d88b5, #2ca0b3);
-  background-image: url("../img/background-top-home.jpg") linear-gradient(90deg, #4d88b5, #2ca0b3);
-  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=$angle,StartColorStr='#4d88b5', EndColorStr='#2ca0b3');
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  clear: both;
-  position: relative;
-}
-
-header:before, header:after {
-  content: " ";
-  display: table;
-}
-
-header:after {
-  clear: both;
-}
-
-@media (max-width: 440px) {
-  header {
-    min-height: 300px;
-  }
-}
-
-header:after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 6px;
-  background-color: #dedf36;
-  background-image: -webkit-gradient(linear, 90deg, from(#d2067a), to(#dedf36));
-  background-image: -webkit-linear-gradient(90deg, #d2067a, #dedf36);
-  background-image: -moz-linear-gradient(90deg, #d2067a, #dedf36);
-  background-image: -ms-linear-gradient(90deg, #d2067a, #dedf36);
-  background-image: -o-linear-gradient(90deg, #d2067a, #dedf36);
-  background-image: linear-gradient(90deg, #d2067a, #dedf36);
-  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=$angle,StartColorStr='#d2067a', EndColorStr='#dedf36');
-  position: absolute;
-  bottom: 0;
-}
-
-header .languages {
-  color: white;
-  float: right;
-  font-size: 12px;
-  margin: 4px 0px 0px;
-}
-
-header .languages div {
-  margin-top: 4px;
-}
-
-header .logo {
-  margin: 32px auto 46px auto;
-  display: table;
-  clear: both;
-}
-
-header .logo img {
-  width: 403px;
-}
-
-@media (max-width: 440px) {
-  header .logo img {
-    width: 330px;
-  }
-}
-
-header nav {
-  background: #0a5164;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  border-radius: 20px;
-  padding: 10px 0px 0px 0px;
-  width: 500px;
-  height: 39px;
-  text-align: center;
-  display: table;
-  margin: auto;
-}
-
-@media (max-width: 991px) {
-  header nav {
-    width: 600px;
-    padding: 16px 0px 0px 0px;
-    height: 59px;
-    font-size: 28px;
-    font-size: 1.75rem;
-  }
-}
-
-@media (max-width: 440px) {
-  header nav {
-    display: none;
-    width: 500px;
-  }
-}
-
-header nav ul {
-  list-style: none;
-  margin-left: -8px;
-}
-
-header nav ul li {
-  display: inline-block;
-  margin-right: -4px;
-}
-
-header nav ul li a {
-  color: white;
-  text-transform: uppercase;
-  padding: 10px;
-}
-
-header nav ul li a:hover {
-  color: white;
-  background: #458293;
-  padding: 10px;
-  text-decoration: none;
-}
-
 footer {
   background-color: #fff;
   background-image: -webkit-gradient(linear, 180deg, from(#a2d9de), to(#fff));
@@ -214,7 +85,7 @@ footer:before {
   content: "";
   display: block;
   width: 100%;
-  height: 6px;
+  height: 4px;
   background-color: #d2067a;
   background-image: -webkit-gradient(linear, 90deg, from(#dedf36), to(#d2067a));
   background-image: -webkit-linear-gradient(90deg, #dedf36, #d2067a);
@@ -227,7 +98,7 @@ footer:before {
 
 footer .logo-footer {
   display: table;
-  margin: 14px auto;
+  margin: 0px auto;
 }
 
 footer .logo-footer img {
@@ -236,8 +107,12 @@ footer .logo-footer img {
 
 footer .address-footer {
   display: table;
-  margin: 14px auto;
+  margin: 14px auto 0px auto;
   text-align: center;
+}
+
+footer .address-footer address {
+  line-height: 1.2;
 }
 
 footer .address-footer address a {
@@ -250,7 +125,7 @@ footer .address-footer address a:hover {
 }
 
 footer .social {
-  margin: 20px auto 0px auto;
+  margin: 16px auto 0px auto;
   display: table;
 }
 
@@ -269,7 +144,7 @@ footer .social li .fa {
   padding: 10px;
   width: 48px;
   text-align: center;
-  margin-right: 5px;
+  margin-right: 0px;
 }
 
 footer .social li a {
