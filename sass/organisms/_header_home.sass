@@ -1,11 +1,14 @@
 header
-  +clearfix
-  min-height: 420px
+  min-height: 400px
+  border: 1px solid red
+
+  +breakpoint($tablet)
+    min-height: 370px
 
   +breakpoint($celular)
     min-height: 300px
 
-  +GradientWithImage('../img/background-top-home.jpg', 90deg, #4d88b5,#2ca0b3)
+  +GradientWithImage('../img/background-top-home.jpg', 90deg, #0d7a8a,#0d7a8a)
   //background-image: url('../img/background-top-home.jpg'), linear-gradient(to bottom,#4d88b5,#2ca0b3)
   background-position: top center
   background-repeat: no-repeat
@@ -13,16 +16,16 @@ header
   background-size: cover //mantém o tamanho do background independente da resolução
   clear: both
   position: relative
-  &:after
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.3)
+  //&:after
     content: ""
     display: block
     width: 100%
-    height: 4px
+    height: 2px
     +gradient(90deg, #d2067a, #dedf36)
+    //background: #137989
     position: absolute
     bottom: 0
-
-  .container
 
   .languages
     color: $branco
@@ -32,20 +35,6 @@ header
     text-align: center
     div
       margin-top: 0px
-
-  .toggle_celular
-    color: $branco
-    float: left
-    margin-top: 0px
-    +font-size(18px)
-
-    & a
-      +font-size(50px)
-      color: #fff
-
-    & a:hover
-      color: #0a5164
-
 
   .logo
     margin: 0px auto 0px auto
@@ -59,16 +48,8 @@ header
         width: 270px
         margin-bottom: 50px
 
-
-  //.menu_celular
-      display: none
-      position: absolute
-      width: 100%
-      height: 250px
-      z-index: 1000
-      +background-opacity(#0a5164, 0.8)
-      padding: 10px
-      margin: 15px auto
+      +breakpoint($tablet)
+        width: 290px
 
   nav.menu_celular
     display: none
@@ -83,16 +64,16 @@ header
         +border-radius(20px)
         padding: 8px
         text-align: center
-
         a
           color: #fff
 
   nav.menu-header
+    font-family: "Arial Narrow", Arial, sans-serif
     background: #0a5164
     +border-radius(20px)
-    padding: 12px 0px 0px 0px
+    padding: 10px 0px 0px 0px
     width: 540px
-    height: 43px
+    height: 42px
     text-align: center
 
     margin: 28px auto
@@ -100,7 +81,7 @@ header
       //display: none
       width: 550px
       padding: 16px 0px 0px 0px
-      height: 59px
+      height: 54px
       +font-size(28px)
 
     +breakpoint($celular)
@@ -117,42 +98,53 @@ header
           color: $branco
           text-transform: uppercase
           padding: 12px
-          +font-size(23px)
+          +font-size(26px)
         a:hover
           color: $branco
           background: #458293
           padding: 12px
           text-decoration: none
 
-  nav.menu_celular2
-    background: #0a5164
-    padding: 8px 0px 0px 0px
-    width: 500px
-    height: 39px
-    text-align: center
-    display: none
-    margin: -30px auto 30px
+.m_celular
+  width: 100%
 
-    +breakpoint($tablet)
-      display: none
+  ul
+    li
+      background: #0b495a
+      text-align: center
+      //margin-bottom: 1px
+      border-bottom: 1px solid #2a6371
+      padding: 8px
+      a
+        +font-size(28px)
+        font-weight: lighter
+        letter-spacing: 1.5px
+        color: #fff
+        text-decoration: none
 
-    +breakpoint($celular)
-      display: none
-      width: 320px
-      +font-size(18px)
+.list-menu-celular-down
+  display: none
 
-    ul
-      list-style: none
-      margin-left: -8px
-      li
-        display: inline-block
-        margin-right: -10px
-        a
-          color: $branco
-          text-transform: uppercase
-          padding: 10px
-        a:hover
-          color: $branco
-          background: #458293
-          padding: 10px
-          text-decoration: none
+.list-menu-celular
+   display: none
+   left: 50%
+   top: 180px
+   width: 200px
+   -webkit-transform: translate(-50%, -50%)
+    -moz-transform: translate(-50%, -50%)
+   transform: translate(-50%, -50%)
+   position: absolute
+   z-index: 1000
+
+
+.lk-celular
+  ul
+    li
+      +border-radius(10px)
+      background: rgba(8, 72, 89, 0.94)
+      text-align: center
+      margin-bottom: 2px
+      padding: 12px
+      a
+        color: #fff
+        text-decoration: none

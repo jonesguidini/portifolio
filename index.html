@@ -7,60 +7,74 @@
 	<link rel="stylesheet" href="css/home.css">
 	<link rel="stylesheet" href="css/geral.css">
 	<link rel="stylesheet" href="css/plugins.css">
+
+	<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="js/geral.js"></script>
+
 </head>
 <body>
 	<header>
 		<div class="container">
-			<div class="toggle_celular">
-				<div><a href="javascript:;" class="bt_toggle"><i class="fa fa-bars"></i></a></div>
-			</div>
 
 			<div class="languages">
 				<div>Languages</div>
 				<div>
-				<a href="#"><img src="img/ico-flag-brazil.png" alt="flag brazil portuguese"></a>
-				<a href="#"><img src="img/ico-flag-usa.png" alt="flag usa english"></a>
+					<a href="#"><img src="img/ico-flag-brazil.png" alt="flag brazil portuguese"></a>
+					<a href="#"><img src="img/ico-flag-usa.png" alt="flag usa english"></a>
 				</div>
 			</div>
+
+			<!--
+			<div class="list-menu-celular">
+				<nav class="lk-celular">
+					<ul>
+						<li><a href="#">HOME</a></li>
+						<li><a href="#">ABOUT ME</a></li>
+						<li><a href="#">SKILLS</a></li>
+						<li><a href="#">PORTFOLIO</a></li>
+						<li><a href="#">CONTACT</a></li>
+					</ul>
+				</nav>
+			</div>
+		-->
 
 			<div class="logo">
 				<img src="img/logo-top-home.png" alt="Logo top">
 			</div>
 
-		<!--
-			<nav class="menu_celular">
-				<div><a href="#">HOME</a></div>
-				<div><a href="#">ABOUT ME</a></div>
-				<div><a href="#">SKILLS</a></div>
-				<div><a href="#">PORTFOLIO</a></div>
-				<div><a href="#">CONTACT</a></div>
-			</nav>
-		-->
+			<div class="toggle_celular">
+				<div><a href="javascript:;" id="bt_toggle"><i class="fa fa-bars"></i></a></div>
+			</div>
 
-		<nav class="menu_celular2">
+	<nav class="menu-header">
+		<ul>
+			<li><a href="#">HOME</a></li>
+			<li><a href="#">ABOUT ME</a></li>
+			<li><a href="#">SKILLS</a></li>
+			<li><a href="#">PORTFOLIO</a></li>
+			<li><a href="#">CONTACT</a></li>
+		</ul>
+	</nav>
+</div>
+</header>
+
+<main>
+
+	<div class="container-full list-menu-celular-down">
+
+		<nav class="m_celular">
 			<ul>
-				<li><a href="#">HOME</a></li>
-				<li><a href="#">ABOUT ME</a></li>
-				<li><a href="#">SKILLS</a></li>
-				<li><a href="#">PORTFOLIO</a></li>
-				<li><a href="#">CONTACT</a></li>
+				<li><a href="home">HOME</a></li>
+				<li><a href="aboutme">ABOUT ME</a></li>
+				<li><a href="skills">SKILLS</a></li>
+				<li><a href="portifolio">PORTFOLIO</a></li>
+				<li><a href="contact">CONTACT</a></li>
 			</ul>
 		</nav>
 
-			<nav class="menu-header">
-				<ul>
-					<li><a href="#">HOME</a></li>
-					<li><a href="#">ABOUT ME</a></li>
-					<li><a href="#">SKILLS</a></li>
-					<li><a href="#">PORTFOLIO</a></li>
-					<li><a href="#">CONTACT</a></li>
-				</ul>
-			</nav>
-		</div>
-	</header>
+	</div>
 
-	<main>
-		<div class="container">
+	<div class="container">
 		<section class="introduction">
 			<div class="mini-photo-profile">
 				<img src="img/mini-photo-home.png" alt="photo profile home">
@@ -72,49 +86,91 @@
 				<a href="#" class="bt-link-about-me">Get to know me <img src="img/ico-link-gettoknowme.png" alt="ico link get to know me"></a>
 			</div>
 		</section>
+	</div>
 
-		<section class="bts-shortcuts">
-			<a href="#" class="bt-large-shortcut">
-				<div class="icon"><i class="fa fa-drivers-license-o"></i></div>
-				<div class="title">SKILLS</div>
-			</a>
+	<div class="container-full">
+		<div class="container">
+			<section class="bts-shortcuts">
+				<a href="#" class="bt-large-shortcut">
+					<div class="icon"><i class="fa fa-drivers-license-o"></i></div>
+					<div class="title">SKILLS</div>
+				</a>
 
-			<a href="#" class="bt-large-shortcut">
-				<div class="icon"><i class="fa fa-file-text-o"></i></div>
-				<div class="title">PORTFOLIO</div>
-			</a>
+				<a href="#" class="bt-large-shortcut">
+					<div class="icon"><i class="fa fa-file-text-o"></i></div>
+					<div class="title">PORTFOLIO</div>
+				</a>
 
-			<a href="#" class="bt-large-shortcut">
-				<div class="icon"><i class="fa fa-phone-square"></i></div>
-				<div class="title">CONTACT</div>
-			</a>
-
-		</section>
+				<a href="#" class="bt-large-shortcut">
+					<div class="icon"><i class="fa fa-phone-square"></i></div>
+					<div class="title">CONTACT</div>
+				</a>
+			</section>
 		</div>
-	</main>
+	</div>
+</main>
 
-	<footer>
-	<div class="container">
-		<nav class="social">
-			<ul>
-				<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-				<li><a href="#"><i class="fa fa-skype"></i></a></li>
-				<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-				<li><a href="#"><i class="fa fa-github"></i></a></li>
-				<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-			</ul>
-		</nav>
+<footer>
+	<div class="container footer-bar">
 
-		<div class="logo-footer"><a href="#"><img src="img/logo_footer.png" alt="logo footer"></a></div>
+		<div class="logo-address">
+			<div>
+				<nav class="social" style="margin-top: 500">
+					<ul>
+						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#"><i class="fa fa-skype"></i></a></li>
+						<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+						<li><a href="#"><i class="fa fa-github"></i></a></li>
+						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+					</ul>
+				</nav>
+			</div>
 
-		<div class="address-footer">
-			<address>
-				<a href="http://www.jonesguidini.com">WWW.JONESGUIDINI.COM</a> <br>
-				jonesguidini@gmail.com / +55 61 98168-1631<br>
-				Todos direitos reservados
-			</address>
+			<div>
+				<a href="#"><img src="img/logo_footer.png" alt="logo footer"></a>
+			</div>
+
+			<div>
+				<address><a href="http://www.jonesguidini.com">WWW.JONESGUIDINI.COM</a> </br>jonesguidini@gmail.com / +55 61 98168-1631 - Todos direitos reservados</address>
+			</div>
 		</div>
-		</div>
-	</footer>
+
+	</div>
+
+</footer>
+
+<!--
+<footer>
+<div class="container footer-bar">
+
+<div class="" style="float: left;">
+<div class="logo-footer">
+<a href="#"><img src="img/logo_footer.png" alt="logo footer"></a>
+</div>
+
+<div class="address-footer">
+<address>
+<a href="http://www.jonesguidini.com">WWW.JONESGUIDINI.COM</a> <br>
+jonesguidini@gmail.com / +55 61 98168-1631 - Todos direitos reservados
+</address>
+</div>
+</div>
+
+<div class="" style="float: right;">
+<nav class="social">
+<ul>
+<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+<li><a href="#"><i class="fa fa-skype"></i></a></li>
+<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+<li><a href="#"><i class="fa fa-github"></i></a></li>
+<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+</ul>
+</nav>
+</div>
+
+</div>
+</footer>
+-->
+
 </body>
 </html>

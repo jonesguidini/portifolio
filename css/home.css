@@ -19,7 +19,7 @@
   -webkit-justify-content: space-between;
   -moz-justify-content: space-between;
   justify-content: space-between;
-  margin-top: 30px;
+  margin: 0px 0px;
 }
 
 .bt-link-about-me {
@@ -32,13 +32,45 @@
   text-decoration: none;
   line-height: 2;
   padding: 8px 16px;
-  background: #748815;
+  background: #0b9795;
   color: #fff;
 }
 
 .bt-link-about-me:hover {
   color: white;
-  background: #37668e;
+  background: #0d7a8a;
+  font-weight: bold;
+}
+
+.toggle_celular {
+  display: none;
+  color: white;
+  float: left;
+  margin: -30px 0px -1px 0px;
+  font-size: 18px;
+  font-size: 1.125rem;
+  text-align: center;
+  width: 100%;
+}
+
+@media (max-width: 440px) {
+  .toggle_celular {
+    visibility: visible;
+    display: block;
+  }
+}
+
+.toggle_celular a {
+  padding: 0px 8px;
+  background: #4a9db1;
+  font-size: 50px;
+  font-size: 3.125rem;
+  color: #fff;
+}
+
+.toggle_celular a:hover {
+  color: #fff;
+  background: #0b495a;
 }
 
 .bt-large-shortcut {
@@ -53,28 +85,40 @@
   padding-right: 15px;
   font-size: 60px;
   font-size: 3.75rem;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  border-radius: 10px;
+  -webkit-border-radius: 15px 0px 15px 0px;
+  -moz-border-radius: 15px 0px 15px 0px;
+  -ms-border-radius: 15px 0px 15px 0px;
+  border-radius: 15px 0px 15px 0px;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   -moz-justify-content: center;
   justify-content: center;
-  background: #e5ebed;
-  border: 10px solid #fff;
-  padding: 14px 14px;
+  background: #fff;
+  box-shadow: 3px 3px #c6c5c0;
+  padding: 25px 14px;
   text-align: center;
-  color: #648b99;
-  position: relativ;
-  margin-bottom: 25px;
+  color: #478088;
+  position: relative;
+  margin: 35px 0px;
 }
 
 @media (min-width: 768px) {
   .bt-large-shortcut {
     float: left;
     width: 31.66667%;
+  }
+}
+
+@media (max-width: 440px) {
+  .bt-large-shortcut {
+    margin: 20px 0px;
+  }
+}
+
+@media (max-width: 991px) {
+  .bt-large-shortcut {
+    margin: 14px 0px;
   }
 }
 
@@ -89,30 +133,25 @@
 }
 
 .bt-large-shortcut:hover {
-  color: #37668e;
-  background: #abd8e8;
-}
-
-.bt-large-shortcut:before {
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  border-radius: 10px;
-  content: " ";
-  position: absolute;
-  top: -10px;
-  left: -10px;
-  right: -10px;
-  bottom: -10px;
-  border: 2px dotted #c2c2c2;
+  -webkit-transition: 0.1s;
+  -o-transition: 0.1s;
+  transition: 0.1s;
+  color: #446a78;
+  font-weight: bold;
+  background-color: #fff;
+  background-image: -webkit-gradient(linear, 180deg, from(#eaf6fa), to(#fff));
+  background-image: -webkit-linear-gradient(180deg, #eaf6fa, #fff);
+  background-image: -moz-linear-gradient(180deg, #eaf6fa, #fff);
+  background-image: -ms-linear-gradient(180deg, #eaf6fa, #fff);
+  background-image: -o-linear-gradient(180deg, #eaf6fa, #fff);
+  background-image: linear-gradient(180deg, #eaf6fa, #fff);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=$angle,StartColorStr='#eaf6fa', EndColorStr='#fff');
+  box-shadow: 3px 3px #ccc;
 }
 
 @media (max-width: 440px) {
   .bts-shortcuts {
     display: block;
-  }
-  .bt-large-shortcut {
-    margin-bottom: 15px;
   }
 }
 
@@ -128,11 +167,11 @@
     font-size: 62px;
     font-size: 3.875rem;
   }
-  :before {
-    top: -7px;
-    left: -7px;
-    right: -7px;
-    bottom: -7px;
+  .bt-large-shortcut:before {
+    top: -8px;
+    left: -8px;
+    right: -8px;
+    bottom: -8px;
   }
 }
 
@@ -174,6 +213,11 @@ section.introduction {
   -webkit-align-items: center;
   -moz-align-items: center;
   align-items: center;
+  margin: 10px 0px 30px 0px;
+}
+
+main .container-full {
+  background: #dfdbce;
 }
 
 .mini-info-profile {
@@ -217,51 +261,33 @@ section.introduction {
 }
 
 header {
-  min-height: 420px;
+  min-height: 400px;
+  border: 1px solid red;
   background-image: url("../img/background-top-home.jpg");
-  background-image: url("../img/background-top-home.jpg") -webkit-linear-gradient(90deg, #4d88b5, #2ca0b3);
-  background-image: url("../img/background-top-home.jpg") -moz-linear-gradient(90deg, #4d88b5, #2ca0b3);
-  background-image: url("../img/background-top-home.jpg") -ms-linear-gradient(90deg, #4d88b5, #2ca0b3);
-  background-image: url("../img/background-top-home.jpg") -o-linear-gradient(90deg, #4d88b5, #2ca0b3);
-  background-image: url("../img/background-top-home.jpg") linear-gradient(90deg, #4d88b5, #2ca0b3);
-  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=$angle,StartColorStr='#4d88b5', EndColorStr='#2ca0b3');
+  background-image: url("../img/background-top-home.jpg") -webkit-linear-gradient(90deg, #0d7a8a, #0d7a8a);
+  background-image: url("../img/background-top-home.jpg") -moz-linear-gradient(90deg, #0d7a8a, #0d7a8a);
+  background-image: url("../img/background-top-home.jpg") -ms-linear-gradient(90deg, #0d7a8a, #0d7a8a);
+  background-image: url("../img/background-top-home.jpg") -o-linear-gradient(90deg, #0d7a8a, #0d7a8a);
+  background-image: url("../img/background-top-home.jpg") linear-gradient(90deg, #0d7a8a, #0d7a8a);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=$angle,StartColorStr='#0d7a8a', EndColorStr='#0d7a8a');
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
   clear: both;
   position: relative;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.3);
 }
 
-header:before, header:after {
-  content: " ";
-  display: table;
-}
-
-header:after {
-  clear: both;
+@media (max-width: 991px) {
+  header {
+    min-height: 370px;
+  }
 }
 
 @media (max-width: 440px) {
   header {
     min-height: 300px;
   }
-}
-
-header:after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 4px;
-  background-color: #dedf36;
-  background-image: -webkit-gradient(linear, 90deg, from(#d2067a), to(#dedf36));
-  background-image: -webkit-linear-gradient(90deg, #d2067a, #dedf36);
-  background-image: -moz-linear-gradient(90deg, #d2067a, #dedf36);
-  background-image: -ms-linear-gradient(90deg, #d2067a, #dedf36);
-  background-image: -o-linear-gradient(90deg, #d2067a, #dedf36);
-  background-image: linear-gradient(90deg, #d2067a, #dedf36);
-  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=$angle,StartColorStr='#d2067a', EndColorStr='#dedf36');
-  position: absolute;
-  bottom: 0;
 }
 
 header .languages {
@@ -275,24 +301,6 @@ header .languages {
 
 header .languages div {
   margin-top: 0px;
-}
-
-header .toggle_celular {
-  color: white;
-  float: left;
-  margin-top: 0px;
-  font-size: 18px;
-  font-size: 1.125rem;
-}
-
-header .toggle_celular a {
-  font-size: 50px;
-  font-size: 3.125rem;
-  color: #fff;
-}
-
-header .toggle_celular a:hover {
-  color: #0a5164;
 }
 
 header .logo {
@@ -310,6 +318,12 @@ header .logo img {
   header .logo img {
     width: 270px;
     margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 991px) {
+  header .logo img {
+    width: 290px;
   }
 }
 
@@ -341,14 +355,15 @@ header nav.menu_celular {
 }
 
 header nav.menu-header {
+  font-family: "Arial Narrow", Arial, sans-serif;
   background: #0a5164;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   border-radius: 20px;
-  padding: 12px 0px 0px 0px;
+  padding: 10px 0px 0px 0px;
   width: 540px;
-  height: 43px;
+  height: 42px;
   text-align: center;
   margin: 28px auto;
 }
@@ -357,7 +372,7 @@ header nav.menu-header {
   header nav.menu-header {
     width: 550px;
     padding: 16px 0px 0px 0px;
-    height: 59px;
+    height: 54px;
     font-size: 28px;
     font-size: 1.75rem;
   }
@@ -383,8 +398,8 @@ header nav.menu-header ul li a {
   color: white;
   text-transform: uppercase;
   padding: 12px;
-  font-size: 23px;
-  font-size: 1.4375rem;
+  font-size: 26px;
+  font-size: 1.625rem;
 }
 
 header nav.menu-header ul li a:hover {
@@ -394,50 +409,109 @@ header nav.menu-header ul li a:hover {
   text-decoration: none;
 }
 
-header nav.menu_celular2 {
-  background: #0a5164;
-  padding: 8px 0px 0px 0px;
-  width: 500px;
-  height: 39px;
+.m_celular {
+  width: 100%;
+}
+
+.m_celular ul li {
+  background: #0b495a;
   text-align: center;
-  display: none;
-  margin: -30px auto 30px;
+  border-bottom: 1px solid #2a6371;
+  padding: 8px;
 }
 
-@media (max-width: 991px) {
-  header nav.menu_celular2 {
-    display: none;
-  }
-}
-
-@media (max-width: 440px) {
-  header nav.menu_celular2 {
-    display: none;
-    width: 320px;
-    font-size: 18px;
-    font-size: 1.125rem;
-  }
-}
-
-header nav.menu_celular2 ul {
-  list-style: none;
-  margin-left: -8px;
-}
-
-header nav.menu_celular2 ul li {
-  display: inline-block;
-  margin-right: -10px;
-}
-
-header nav.menu_celular2 ul li a {
-  color: white;
-  text-transform: uppercase;
-  padding: 10px;
-}
-
-header nav.menu_celular2 ul li a:hover {
-  color: white;
-  background: #458293;
-  padding: 10px;
+.m_celular ul li a {
+  font-size: 28px;
+  font-size: 1.75rem;
+  font-weight: lighter;
+  letter-spacing: 1.5px;
+  color: #fff;
   text-decoration: none;
+}
+
+.list-menu-celular-down {
+  display: none;
+}
+
+.list-menu-celular {
+  display: none;
+  left: 50%;
+  top: 180px;
+  width: 200px;
+  -webkit-transform: translate(-50%, -50%);
+  -webkit-transform--moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  position: absolute;
+  z-index: 1000;
+}
+
+.lk-celular ul li {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+  background: rgba(8, 72, 89, 0.94);
+  text-align: center;
+  margin-bottom: 2px;
+  padding: 12px;
+}
+
+.lk-celular ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer {
+  background: #253a40;
+  color: #fff;
+}
+
+footer .logo-address {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  align-items: center;
+  text-align: center;
+}
+
+footer .logo-address div {
+  vertical-align: top;
+  margin-top: 13px;
+  display: block;
+}
+
+footer .logo-address div img {
+  width: 62px;
+  h1eight: 37px;
+}
+
+footer .social {
+  display: inline;
+  margin-top: 500px;
+}
+
+footer .social li {
+  display: inline-block;
+}
+
+footer .social li .fa {
+  font-size: 22px;
+  border: 2px dotted #77b7bd;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  border-radius: 25px;
+  padding: 10px;
+  width: 48px;
+  text-align: center;
+  margin-right: 0px;
+}
+
+footer .social li a {
+  color: #fff1;
+}
+
+footer .social li a:hover {
+  color: yellow;
 }

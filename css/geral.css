@@ -12,6 +12,7 @@ body {
   font-family: 'Open Sans', sans-serif !important;
   font-weight: 400;
   line-height: 1;
+  background: #253a40 !important;
 }
 
 body strong {
@@ -19,7 +20,7 @@ body strong {
 }
 
 main {
-  background: #efeee4;
+  background: #f3efe0;
 }
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -70,87 +71,7 @@ table {
   border-spacing: 0;
 }
 
-footer {
-  background-color: #fff;
-  background-image: -webkit-gradient(linear, 180deg, from(#a2d9de), to(#fff));
-  background-image: -webkit-linear-gradient(180deg, #a2d9de, #fff);
-  background-image: -moz-linear-gradient(180deg, #a2d9de, #fff);
-  background-image: -ms-linear-gradient(180deg, #a2d9de, #fff);
-  background-image: -o-linear-gradient(180deg, #a2d9de, #fff);
-  background-image: linear-gradient(180deg, #a2d9de, #fff);
-  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=$angle,StartColorStr='#a2d9de', EndColorStr='#fff');
-}
-
-footer:before {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 4px;
-  background-color: #d2067a;
-  background-image: -webkit-gradient(linear, 90deg, from(#dedf36), to(#d2067a));
-  background-image: -webkit-linear-gradient(90deg, #dedf36, #d2067a);
-  background-image: -moz-linear-gradient(90deg, #dedf36, #d2067a);
-  background-image: -ms-linear-gradient(90deg, #dedf36, #d2067a);
-  background-image: -o-linear-gradient(90deg, #dedf36, #d2067a);
-  background-image: linear-gradient(90deg, #dedf36, #d2067a);
-  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=$angle,StartColorStr='#dedf36', EndColorStr='#d2067a');
-}
-
-footer .logo-footer {
-  display: table;
+.container-full {
   margin: 0px auto;
-}
-
-footer .logo-footer img {
-  width: 62px;
-}
-
-footer .address-footer {
-  display: table;
-  margin: 14px auto 0px auto;
-  text-align: center;
-}
-
-footer .address-footer address {
-  line-height: 1.2;
-}
-
-footer .address-footer address a {
-  font-weight: 700;
-  color: #000;
-}
-
-footer .address-footer address a:hover {
-  color: #0093d7;
-}
-
-footer .social {
-  margin: 16px auto 0px auto;
-  display: table;
-}
-
-footer .social li {
-  display: inline-block;
-}
-
-footer .social li .fa {
-  font-size: 22px;
-  border: 2px dotted #77b7bd;
-  background: #d0ebed;
-  -webkit-border-radius: 25px;
-  -moz-border-radius: 25px;
-  -ms-border-radius: 25px;
-  border-radius: 25px;
-  padding: 10px;
-  width: 48px;
-  text-align: center;
-  margin-right: 0px;
-}
-
-footer .social li a {
-  color: #222222;
-}
-
-footer .social li a:hover {
-  color: #e53600;
+  width: 100%;
 }
