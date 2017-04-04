@@ -378,7 +378,7 @@ section.introduction {
 }
 
 header {
-  min-height: 400px;
+  min-height: 430px;
   border: 1px solid red;
   background-image: url("../img/background-top-home.jpg");
   background-position: top center;
@@ -426,7 +426,6 @@ header .logo img {
 }
 
 footer {
-  background: #253a40;
   color: white;
 }
 
@@ -439,28 +438,45 @@ footer a:hover {
 }
 
 footer .logo-address {
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  -moz-align-items: center;
-  align-items: center;
   text-align: center;
+  -webkit-box-align: top;
+  -ms-flex-align: top;
+  -webkit-align-items: top;
+  -moz-align-items: top;
+  align-items: top;
+}
+
+@media (max-width: 640px) {
+  footer .logo-address {
+    text-align: center;
+    padding-top: 12px;
+  }
 }
 
 footer .logo-address div {
-  vertical-align: top;
-  margin-top: 13px;
-  display: block;
+  margin: 16px 0px;
+  height: 50px;
+  align-items: baseline;
+  vertical-align: middle;
+  text-align: left;
+  display: inline-block;
+}
+
+@media (max-width: 640px) {
+  footer .logo-address div {
+    text-align: center;
+    display: block;
+    margin: 8px 0px 0px 0px;
+  }
 }
 
 footer .logo-address div img {
   width: 62px;
-  height: 37px;
+  margin: 0px 6px;
 }
 
-footer .social {
-  display: inline;
-  margin-top: 500px;
+footer .logo-address div::before {
+  margin-top: 100px;
 }
 
 footer .social li {
@@ -477,7 +493,7 @@ footer .social li .fa {
   padding: 10px;
   width: 48px;
   text-align: center;
-  margin-right: 0px;
+  margin-right: 2px;
 }
 
 footer .social li a {
@@ -486,4 +502,8 @@ footer .social li a {
 
 footer .social li a:hover {
   color: #061d23;
+}
+
+.logo-footer, .address-footer {
+  padding-top: 3px;
 }
