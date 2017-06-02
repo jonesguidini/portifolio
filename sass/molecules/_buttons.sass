@@ -72,12 +72,14 @@
       +font-size(90px)
       margin-right: 12px
 
-  &:hover
+  &:hover, &:active, &:focus
     +transition(.1s)
-    color: #446a78
+    color: #478088
     font-weight: bold
     +gradient(180deg, #eaf6fa, #fff)
     box-shadow: 3px 3px #ccc
+
+
 
   +breakpoint($celular)
     margin: 18px 0px
