@@ -1,0 +1,232 @@
+@CHARSET "UTF-8";
+ body {
+   padding-top: 60px;
+   padding-bottom: 40px;
+   background: #cadfc4;	
+   font-size: 13px;
+ }
+      
+.cabecalho {
+	margin-top: -20px;
+	background: #357023;
+	padding: 0px;
+}
+
+.menu_rodape {
+	background: #e0e8dd;
+	padding: 6px 0px;
+	text-align: center;
+}
+
+.fundo_corpo {
+    background: #fff url(../img/fundo_corpo.gif) repeat-x;
+}
+
+.conteudo {
+	padding: 20px 0px 25px 0px;
+}
+
+.conteudo_admin {
+	padding: 10px 0px 25px 0px;
+}
+
+.link-visuweb {
+	margin: 10px 0px;
+	text-align: center;
+	width: 100%;
+	color: #516548;
+}
+
+.link-visuweb a{
+	text-decoration: none;
+	color: black;
+	color: #fff;
+}
+
+.link-visuweb a:hover{
+	text-decoration: none;
+	color: #fff;
+}
+
+.inicial_01 {
+	float: left;
+	width: 300px;
+	margin: 0px 0px 0px 0px;
+}
+
+.inicial_02 {
+	float: left;
+	width: 344px;
+}
+
+.inicial_03 {
+	float: left;
+	width: 320px;
+}
+
+.tit_secao {
+	font-size: 16px;
+	width: 100%;
+	font-weight: bold;
+	margin-bottom: 6px;
+}
+
+.foto_mini_inicial {
+	float: left;
+	margin: 0px 8px 6px 0px;
+}
+
+.texto-justify {
+	text-align: justify;
+}
+
+.tiny_font {
+	font-size: 13px;
+}
+
+.links-rodape a{
+	color: #262626;
+}
+
+.links-rodape a:hover{
+	color: #262626;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.ico_pagina {
+	float: left;
+	width: 34px;
+	height: 32px;
+}
+
+.titulo_pagina {
+	float: left;
+	width: 900px;
+	height: 24px;
+	font-size: 20px;
+	font-weight: bold;
+	padding: 6px 0px 0px 0px;
+	color: #2068b1;
+}
+
+.div_titulo_pagina {
+	width: 100%;
+	float: left;
+	margin-bottom: 16px;
+}
+
+.info_contato {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.foto {
+	background: #fff;
+	width: 142px;
+	height: 106px;
+	padding: 4px;
+	border: 1px solid #ccc;
+	float: left;
+	margin: 5px 4px; 
+	text-align: center;
+}
+
+.foto_mini {
+	background: #fff;
+	padding: 4px;
+	border: 1px solid #ccc;
+	float: left;
+	margin: 5px 4px; 
+	text-align: center;
+}
+
+.artigo_principal {
+	border-right: 1px solid #ccc;
+	padding: 0px 20px 0px 6px;
+	text-align: justify;
+}
+
+.titulo_artigo {
+	font-size: 19px;
+	font-weight: bold;
+	font-style: italic;
+	color: #222;
+}
+
+.lista_outros_artigos {
+	padding-left: 14px;
+}
+
+.link_artigos_interno {
+	padding: 6px 0px;
+	border-bottom: 1px dashed #ccc;
+}
+
+.cx_parceiros{
+	width: 170px;
+	margin: 10px 10px;
+	float: left;
+}
+
+.tit_parceiro {
+	font-size: 18px;
+	font-weight: bold;
+	color: #1b5667;
+}
+
+.fundo_corpo_admin {
+	margin-top: -20px;
+	background: #fff;
+}
+
+.bg_color_th {
+	background: #e5f2f7;
+}
+
+.msgs_status {
+}
+
+.class_tag_galeria th {
+	background: #e9f0e8;
+}
+
+.cx_artigo_inicial {
+	width: 320px;
+	height: 140px;
+	overflow: auto;
+}
+
+.msg_contato {
+	width: 960px; 
+	padding: 10px; 
+	background: #90d2ea; 
+	margin-bottom: 20px; 
+	text-align: center; 
+	font-size: 12px; 
+	font-weight: bold;
+}
+
+.msg_contato_erro {
+	width: 960px; 
+	padding: 10px; 
+	background: #ef9292; 
+	margin-bottom: 20px; 
+	text-align: center; 
+	font-size: 12px; 
+	font-weight: bold;
+}
+
+.css_texto_biblico {
+	font-size: 22px;
+	font-weight: bold;
+}
+
+.Tit_colabore {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.link-white a {
+	color: #fff;
+}

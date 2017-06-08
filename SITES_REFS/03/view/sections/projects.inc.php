@@ -14,7 +14,7 @@
 	<div class="col-md-6 col-sm-12 col-xs-12">
 		<figure class="effect">
 			<img src="<?= VIEW_PATH.'images/'.$project->image; ?>" alt="<?= $project->title; ?>" />
-			
+
 			<figcaption>
 				<h3><?= $project->title; ?></h3>
 				<p><?= $project->description; ?></p>
@@ -23,17 +23,17 @@
 				<span class="icon">
 					<span class="glyphicon glyphicon-new-window"></span>
 				</span>
-			</figcaption> 
+			</figcaption>
 		</figure>
 	</div>
 
 	<?php } ?>
-	
+
 </div>
-	
+
 <?php } else { ?>
-	
-<div class="container">	
+
+<div class="container">
 	<div class="alert alert-warning">
 		No projects were found in this resume
 	</div>

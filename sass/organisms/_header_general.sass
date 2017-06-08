@@ -11,6 +11,7 @@
 
 .container-full
   background: #dfdbce
+  //background: #cbc6b6
 
 .menu_celular
   display: none
@@ -103,7 +104,7 @@ header
   background-size: cover //mantém o tamanho do background independente da resolução
   clear: both
   position: relative
-  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.3)
+  +boxShadow(0 4px 10px 0 rgba(0, 0, 0, 0.3))
 
   +breakpoint($tablet)
     min-height: 370px
