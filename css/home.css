@@ -112,8 +112,10 @@
   -webkit-justify-content: center;
   -moz-justify-content: center;
   justify-content: center;
-  background: #fff;
+  -webkit-box-shadow: 3px 3px #c6c5c0;
+  -moz-box-shadow: 3px 3px #c6c5c0;
   box-shadow: 3px 3px #c6c5c0;
+  background: #fff;
   padding: 25px 14px;
   text-align: center;
   color: #478088;

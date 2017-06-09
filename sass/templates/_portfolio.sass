@@ -2,14 +2,44 @@ header
   background-image: url('../img/background-top-portfolio.jpg')
 
 .introduction
+  margin-bottom: 50px
   +breakpoint($celular)
     margin-left: 0px
     text-align: justify
     text-align-last: center
 
   h2
+    +border-radius(10px 0px 10px 0px)
+    +boxShadow(2px 2px #c6c5c0)
+    +font-size(36px)
     color: #145f85
-    margin-bottom: 0px
+    margin-bottom: -24px
+    font-weight: 500
+    background: #fff
+    padding: 12px
+    cursor: pointer
+    //text-align: center
+    +breakpoint($celular)
+      +font-size(30px)
+
+  h2:hover
+    background: #0c7a8b
+    color: #fff
+    +boxShadow(2px 2px #fff)
+
+  div
+    margin-bottom: 30px
+
+    center
+      p
+        margin-top: 6px
+        color: #999
+        margin-bottom: 20px
+        //background: #ebe9e3
+
+  .list-collapse
+    margin-top: 40px
+
 
 .link-large
   top: 25%
@@ -92,6 +122,9 @@ header
 
           +breakpoint($celular)
             display: inline
+
+        img:hover
+          +opacity(0.7)
 
 //CSS SITE
 .info-site-celular

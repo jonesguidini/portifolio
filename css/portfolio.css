@@ -2171,8 +2171,10 @@ footer .social li a:hover {
   -o-justify-content: center;
   justify-content: center;
   -ms-flex-pack: center;
-  background: #fff;
+  -webkit-box-shadow: 3px 3px #c6c5c0;
+  -moz-box-shadow: 3px 3px #c6c5c0;
   box-shadow: 3px 3px #c6c5c0;
+  background: #fff;
   padding: 25px 14px;
   text-align: center;
   color: #478088;
@@ -2244,6 +2246,10 @@ header {
   background-image: url("../img/background-top-portfolio.jpg");
 }
 
+.introduction {
+  margin-bottom: 50px;
+}
+
 @media (max-width: 440px) {
   .introduction {
     margin-left: 0px;
@@ -2253,8 +2259,50 @@ header {
 }
 
 .introduction h2 {
+  -webkit-border-radius: 10px 0px 10px 0px;
+  -moz-border-radius: 10px 0px 10px 0px;
+  -ms-border-radius: 10px 0px 10px 0px;
+  border-radius: 10px 0px 10px 0px;
+  -webkit-box-shadow: 2px 2px #c6c5c0;
+  -moz-box-shadow: 2px 2px #c6c5c0;
+  box-shadow: 2px 2px #c6c5c0;
+  font-size: 36px;
+  font-size: 2.25rem;
   color: #145f85;
-  margin-bottom: 0px;
+  margin-bottom: -24px;
+  font-weight: 500;
+  background: #fff;
+  padding: 12px;
+  cursor: pointer;
+}
+
+@media (max-width: 440px) {
+  .introduction h2 {
+    font-size: 30px;
+    font-size: 1.875rem;
+  }
+}
+
+.introduction h2:hover {
+  background: #0c7a8b;
+  color: #fff;
+  -webkit-box-shadow: 2px 2px #fff;
+  -moz-box-shadow: 2px 2px #fff;
+  box-shadow: 2px 2px #fff;
+}
+
+.introduction div {
+  margin-bottom: 30px;
+}
+
+.introduction div center p {
+  margin-top: 6px;
+  color: #999;
+  margin-bottom: 20px;
+}
+
+.introduction .list-collapse {
+  margin-top: 40px;
 }
 
 .link-large {
@@ -2490,6 +2538,11 @@ header {
   .cx-logos-list ul li figure img {
     display: inline;
   }
+}
+
+.cx-logos-list ul li figure img:hover {
+  opacity: 0.7;
+  filter: alpha(opacity=70);
 }
 
 .info-site-celular {
