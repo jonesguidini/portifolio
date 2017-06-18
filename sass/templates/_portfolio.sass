@@ -31,7 +31,7 @@ header
     text-align-last: center
 
 //CSS LISTA WEBSITES
-.cx-website-list, .cx-logos-list
+.cx-website-list, .cx-logos-list, .cx-envelopes-list
   ul
     +clearfix
     +make-row
@@ -88,16 +88,22 @@ header
             h3
               //breakpoint($tablet)
                 +font-size(22px)
-              +font-size(35px)
               margin: 0px
               color: #6ad9ea !important
+              +font-size(35px)
+              +breakpoint($celular-vertical)
+
+              +breakpoint($celular)
+                +font-size(44px)
+                margin-top: 15px
+
 
             p
               +font-size(19px)
               padding: 6px 0px 0px 0px
-              //+breakpoint($celular-vertical)
+              +breakpoint($celular-vertical)
                 +font-size(18px)
-                text-transform: lowercase !important
+                //text-transform: lowercase !important
 
             p.subtitle-port-link
               //+breakpoint($celular-vertical)
@@ -142,10 +148,6 @@ header
 //CSS LISTA ENVELOPES
 .cx-envelopes-list
   ul
-    +clearfix
-    +make-row
-    margin-bottom: 0px
-
     li
       +make-sm-column(4)
       +make-lg-column(3)
@@ -162,20 +164,12 @@ header
         margin: 12.5px 0px 5px 0px
 
       figure
-        position: relative
-        padding: 9px
-        background: $branco
-        text-align: center
-        +boxShadow(1px 2px 5px 0px rgba(0,0,0,0.1))
+        figcaption
+          a
+            top: 37%
+            p.subtitle-port-link
+              margin-top: 0px
 
-        img
-          +img-responsive
-          +align-items(center)
-          margin: 0px auto
-
-          +breakpoint($celular)
-            display: inline
-            width: 350px
-
-        img:hover
-          +opacity(0.7)
+              display: block
+            i
+              margin-top: 0px
