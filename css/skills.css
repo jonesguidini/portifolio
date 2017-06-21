@@ -703,31 +703,30 @@ header {
   background-image: url("../img/background-top-skills.jpg");
 }
 
-.sk-list ul {
+.text-about-me {
   margin-left: -15px;
   margin-right: -15px;
 }
 
-.sk-list ul:before, .sk-list ul:after {
+.text-about-me:before, .text-about-me:after {
   content: " ";
   display: table;
 }
 
-.sk-list ul:after {
+.text-about-me:after {
   clear: both;
 }
 
-.sk-list ul:before, .sk-list ul:after {
+.text-about-me:before, .text-about-me:after {
   content: " ";
   display: table;
 }
 
-.sk-list ul:after {
+.text-about-me:after {
   clear: both;
 }
 
-.sk-list ul li {
-  text-align: center;
+.text-about-me div.sk-column {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
@@ -743,28 +742,28 @@ header {
 }
 
 @media (min-width: 768px) {
-  .sk-list ul li {
+  .text-about-me div.sk-column {
     float: left;
     width: 33.33333%;
   }
 }
 
 @media (min-width: 1200px) {
-  .sk-list ul li {
+  .text-about-me div.sk-column {
     float: left;
-    width: 25%;
+    width: 33.33333%;
   }
 }
 
 @media (min-width: 992px) {
-  .sk-list ul li {
+  .text-about-me div.sk-column {
     float: left;
-    width: 25%;
+    width: 33.33333%;
   }
 }
 
 @media (max-width: 640px) {
-  .sk-list ul li {
+  .text-about-me div.sk-column {
     position: relative;
     float: left;
     width: 33.33333%;
@@ -775,7 +774,7 @@ header {
 }
 
 @media (max-width: 440px) {
-  .sk-list ul li {
+  .text-about-me div.sk-column {
     position: relative;
     float: left;
     width: 100%;
@@ -785,7 +784,11 @@ header {
   }
 }
 
-.sk-list ul li div {
+.sk-list ul li div.skill {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
   background: #fff;
   width: 100%;
   padding: 6px 10px;
@@ -793,40 +796,67 @@ header {
   -moz-border-radius: 10px 10px 10px 10px;
   -ms-border-radius: 10px 10px 10px 10px;
   border-radius: 10px 10px 10px 10px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   background: #fff;
   height: 47px;
 }
 
-.sk-list ul li div svg {
+.sk-list ul li .info-skill {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.sk-list ul li .logo-skill {
+  width: 3em;
+}
+
+.sk-list ul li .logo-skill svg {
   float: left;
   max-width: 2.5em !important;
   fill: #587c82;
   margin-right: 6px;
 }
 
-.sk-list ul li div svg path {
+.sk-list ul li .logo-skill svg path {
   fill: #587c82;
 }
 
-.sk-list ul li div i {
+.sk-list ul li .logo-skill i {
   float: left;
   font-size: 2.5em !important;
   color: #587c82;
   margin-right: 6px;
 }
 
-.sk-list ul li div p {
+.sk-list ul li .flexible-info-skill {
+  flex-grow: 1;
+}
+
+.sk-list ul li .flexible-info-skill p {
   color: #0d7499;
   font-weight: bold;
   margin-top: 2px;
   float: left;
 }
 
-.sk-list ul li div div.skills-bar {
+@media (max-width: 640px) {
+  .sk-list ul li .flexible-info-skill p {
+    font-size: 15px;
+    font-size: 0.9375rem;
+  }
+}
+
+@media (max-width: 440px) {
+  .sk-list ul li .flexible-info-skill p {
+    margin-top: 4px;
+  }
+}
+
+.sk-list ul li .flexible-info-skill div.skills-bar {
   float: left;
-  margin-top: -8px;
-  max-width: 200px;
+  margin-top: -12px;
+  width: 100%;
   height: 6px;
   padding: 0px;
   background: #e0e0e0;
@@ -837,25 +867,7 @@ header {
   border-radius: 10px 10px 10px 10px;
 }
 
-@media (max-width: 991px) {
-  .sk-list ul li div div.skills-bar {
-    max-width: 152px;
-  }
-}
-
-@media (max-width: 640px) {
-  .sk-list ul li div div.skills-bar {
-    max-width: 120px;
-  }
-}
-
-@media (max-width: 440px) {
-  .sk-list ul li div div.skills-bar {
-    max-width: 264px;
-  }
-}
-
-.sk-list ul li div div.skills-bar div {
+.sk-list ul li .flexible-info-skill div.skills-bar div {
   margin: 0px;
   border: 0px;
   background-color: #47a247;
