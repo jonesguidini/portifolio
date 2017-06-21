@@ -75,3 +75,30 @@ table {
   margin: 0px auto;
   width: 100%;
 }
+
+.introduction {
+  margin-top: 25px;
+  text-align: justify;
+}
+
+@media (max-width: 440px) {
+  .introduction {
+    margin-left: 0px;
+    text-align: justify;
+    text-align-last: center;
+  }
+}
+
+.introduction h3 {
+  font-size: 40px;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.sub-footer {
+  margin-top: 30px;
+}
+
+.content {
+  margin-top: 20px;
+}

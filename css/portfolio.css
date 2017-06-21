@@ -1869,6 +1869,13 @@ header div {
   clear: both;
   color: white;
   border: 3px solid white;
+  -webkit-border-radius: 15px 0px 15px 0px;
+  -moz-border-radius: 15px 0px 15px 0px;
+  -ms-border-radius: 15px 0px 15px 0px;
+  border-radius: 15px 0px 15px 0px;
+  -webkit-box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.1);
   padding: 0px;
   font-size: 50px;
   text-align: center;
@@ -1883,18 +1890,18 @@ header div {
   }
 }
 
-@media (max-width: 440px) {
-  .title-header {
-    margin: 34px auto 55px auto !important;
-    font-size: 40px;
-    width: 300px;
-  }
-}
-
 @media (max-width: 640px) {
   .title-header {
     margin: 20px auto 55px auto !important;
     font-size: 30px;
+  }
+}
+
+@media (max-width: 440px) {
+  .title-header {
+    margin: 34px auto 25px auto !important;
+    font-size: 40px;
+    width: 300px;
   }
 }
 
@@ -1924,8 +1931,8 @@ header div {
   text-align: center;
   color: white;
   margin-top: -12px;
-  font-size: 26px;
-  font-size: 1.625rem;
+  font-size: 24px;
+  font-size: 1.5rem;
   font-style: italic;
   font-weight: 300;
 }
@@ -2116,10 +2123,12 @@ footer .social li a:hover {
 }
 
 .toggle_celular {
+  z-index: 1000;
   display: none;
   color: white;
   float: left;
-  margin: -30px 0px -1px 0px;
+  cursor: pointer;
+  margin-bottom: -1px;
   font-size: 18px;
   font-size: 1.125rem;
   text-align: center;
@@ -2279,10 +2288,6 @@ header {
   -webkit-box-shadow: 2px 2px #fff;
   -moz-box-shadow: 2px 2px #fff;
   box-shadow: 2px 2px #fff;
-}
-
-.introduction {
-  margin-bottom: 50px;
 }
 
 @media (max-width: 440px) {

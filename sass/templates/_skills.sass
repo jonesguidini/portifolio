@@ -1,2 +1,112 @@
 header
   background-image: url('../img/background-top-skills.jpg')
+
+.sk-list
+  ul
+    +clearfix
+    +make-row
+    li
+
+      text-align: center
+      +make-sm-column(4)
+      +make-lg-column(3)
+      +make-md-column(3)
+
+      +breakpoint($celular-vertical)
+        +make-xs-column(4)
+
+      +breakpoint($celular)
+        +make-xs-column(12)
+
+      div
+        background: #fff
+        width: 100%
+        padding: 6px 10px
+        +border-radius(10px 10px 10px 10px)
+        //+boxShadow(1px 2px 5px 0px rgba(0,0,0,0.1))
+        margin-bottom: 20px
+        background: #fff
+        height: 47px
+        svg
+          float: left
+          max-width: 2.5em !important
+          fill: #587c82
+          margin-right: 6px
+          path
+            fill: #587c82
+        i
+          float: left
+          font-size: 2.5em !important
+          color: #587c82
+          margin-right: 6px
+        p
+          color: #0d7499
+          font-weight: bold
+          margin-top: 2px
+          float: left
+
+        div.skills-bar
+          float: left
+          margin-top: -8px
+          max-width: 200px
+          +breakpoint($tablet)
+            max-width: 152px
+          +breakpoint($celular-vertical)
+            max-width: 120px
+          +breakpoint($celular)
+            max-width: 264px
+          height: 6px
+          padding: 0px
+          background: #e0e0e0
+          border: none
+          +border-radius(10px 10px 10px 10px)
+
+          div
+            margin: 0px
+            border: 0px
+            +gradient(90deg, #78d178, #47a247)
+
+
+// .icons-skills
+//   width: 100%
+//   div
+//     padding: 0px
+//     +make-sm-column(4)
+//     +make-lg-column(4)
+//     +make-md-column(2)
+//     width: 100%
+//     margin-bottom: 20px
+//     background: #fff
+//     height: 45px
+//     svg
+//       float: left
+//       max-width: 2.5em !important
+//       +img-responsive
+//       fill: #587c82
+//       margin-right: 10px
+//       margin-left: -16px
+//     i
+//       float: left
+//       font-size: 3em !important
+//       +img-responsive
+//       color: #587c82
+//       margin-right: 10px
+//       margin-left: -16px
+//     p
+//       color: #0d7499
+//       font-weight: bold
+//       margin-top: 4px
+//
+//     div.skills-bar
+//       margin-top: -8px
+//       width: 110px
+//       height: 6px
+//       padding: 0px
+//       background: #e0e0e0
+//       border: none
+//       +border-radius(10px 10px 10px 10px)
+//
+//       div
+//         margin: 0px
+//         border: 0px
+//         +gradient(90deg, #78d178, #47a247)

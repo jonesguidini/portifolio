@@ -29,10 +29,13 @@
     font-weight: bold
 
 .toggle_celular
+  z-index: 1000
   display: none
   color: $branco
   float: left
-  margin: -30px 0px -1px 0px
+  cursor: pointer
+  //margin: -30px 0px -1px 0px
+  margin-bottom: -1px
   +font-size(18px)
   text-align: center
   width: 100%
@@ -46,6 +49,7 @@
     //+border-radius(4px)
     +font-size(50px)
     color: #fff
+    //border: 10px solid #fff
 
   & a:hover
     color: #fff
