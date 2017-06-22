@@ -844,12 +844,7 @@ header {
 .sk-list ul li .logo-skill svg {
   float: left;
   max-width: 2.5em !important;
-  fill: #587c82;
   margin-right: 6px;
-}
-
-.sk-list ul li .logo-skill svg path {
-  fill: #587c82;
 }
 
 .sk-list ul li .logo-skill i {
