@@ -3,22 +3,18 @@ header
 
 .text-about-me
   text-align: justify
-
+  margin-bottom: -10px //to compensate p spacing
+  //p
+    margin: 0px
   img
-    margin-top: 4px
-    margin-right: 20px
-    +boxShadow(1px 2px 5px 0px rgba(0,0,0,0.1))
+    margin: 0px 20px 0px 0px
     border: 6px solid #fff
-    margin-bottom: 0px
+    +boxShadow(1px 2px 5px 0px rgba(0,0,0,0.1))
 
     +breakpoint($celular)
       +img-responsive
-      margin-bottom: 0px
-
 
 .fotos-about-me
-  //+make-md-column(5)
-  //background: #ccc
   +make-lg-column(02)
   +breakpoint($celular)
     +make-xs-column(12)

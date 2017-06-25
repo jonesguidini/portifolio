@@ -1,9 +1,14 @@
 //BREAKPOINT GERAL -------------------------------------------------
 section.introduction
+  h2
+    margin: 0
+    margin: 0px 0px 4px 0px
+    +breakpoint($celular)
+      display: block
+      margin-top: 20px
+
   +flexbox
-  margin: 0px 0px
   +align-items(center)
-  margin: 10px 0px 0px 0px
 
   +breakpoint($celular)
     display: block
@@ -24,4 +29,3 @@ section.introduction
     text-align: center
   img
     width: 140px
-    margin-top: 22px

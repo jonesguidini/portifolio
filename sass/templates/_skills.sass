@@ -1,11 +1,12 @@
 header
   background-image: url('../img/background-top-skills.jpg')
 
-.text-about-me
+.content
   +clearfix
   +make-row
   div.sk-column
-    //background: #ccc
+    margin-top: -10px //to compensate spacing
+    margin-bottom: -30px
     +make-sm-column(4)
     +make-lg-column(4)
     +make-md-column(4)
@@ -13,19 +14,27 @@ header
       +make-xs-column(4)
     +breakpoint($celular)
       +make-xs-column(12)
+      margin-bottom: 0px
+      margin-top: 0px //to compensate spacing
 
   h4
     text-align: center
     font-weight: bolder
-    margin-bottom: 12px
+    margin: 0px 0px 8px 0px
+    //margin-bottom: 8px
     +breakpoint($tablet)
       +font-size(25px)
     +breakpoint($celular-vertical)
       +font-size(19px)
     +breakpoint($celular)
       +font-size(25px)
+    +border-radius(10px 0px 10px 0px)
+    padding: 8px 0px
+    background: #e0ddd2
+
 
 .sk-list
+  margin-bottom: 32px
   ul
     li
       div.skill
@@ -49,7 +58,6 @@ header
 
       .logo-skill
         width: 3em
-
         svg
           float: left
           max-width: 2.5em !important
@@ -71,6 +79,7 @@ header
           font-weight: bold
           margin-top: 1px
           float: left
+          +font-size(20px)
           +breakpoint($celular-vertical)
             +font-size(18px)
           +breakpoint($celular)
