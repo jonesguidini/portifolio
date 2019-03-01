@@ -1,37 +1,0 @@
-10
-
-dir
-2
-https://subversion.assembla.com/svn/samaritanodf/trunk/admin/js/tinymce/plugins/jbimages/ci/application/language
-https://subversion.assembla.com/svn/samaritanodf
-
-
-
-2013-08-14T00:27:14.219984Z
-2
-mineirodf
-
-
-svn:special svn:externals svn:needs-lock
-
-
-
-
-
-
-
-
-
-
-
-a9318946-5ae9-40ac-a9af-d71ea89248f1
-
-english
-dir
-
-french
-dir
-
-russian
-dir
-

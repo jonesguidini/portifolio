@@ -1,2 +1,0 @@
-Site clonado de: https://github.com/pattern-lab/patternlab-php
-
